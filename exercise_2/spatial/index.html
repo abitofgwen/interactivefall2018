@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spatial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+    <style>
+        body {
+            background-color:white;
+            color: black;   
+			font-family: 'Source Sans Pro', sans-serif;
+        }
+        #textbox {
+            text-align: left;
+            width: 15%;
+            margin-left: 75%;
+            position: fixed;
+            top:30%;
+			font-size: 16px;
+			z-index: 1000;
+
+        }
+		#textbox:hover{
+			color:white;
+		}
+		h1{
+			font-size: 16px;
+		}
+		ul{
+			list-style: none;
+			font-weight: 300;
+			font-size: 16px;
+			padding: 0;
+		}
+        img {
+            width:50%;
+            margin-left: 10%;
+		/*   -webkit-transform: perspective(1000px) rotatex(-70deg);*/
+			box-shadow: 0px 0px 15px  #888888;
+			background-color: black;
+			margin-top: 3%;
+
+
+        }
+		img:hover{
+			-webkit-transform:none;
+
+		}
+		
+        a {
+              color: black;
+              text-decoration:none;
+	          font-weight: 600;
+        }
+		
+		#one{
+			margin-top: 5%;
+			-webkit-transform: perspective(1000px) rotatex(-70deg) rotate(80deg);
+			-webkit-transition: ease 0.5s; /* For Safari 3.1 to 6.0 */
+			transition: ease 0.5s;
+
+		}
+		#one:hover{
+			-webkit-transform:none;
+
+		}
+		#two{
+			margin-top: 5%;
+			-webkit-transform: perspective(1000px) rotatex(-30deg) rotate(-20deg);
+			-webkit-transition: ease 0.5s; /* For Safari 3.1 to 6.0 */
+			transition: ease 0.5s;
+
+		}
+		#two:hover{
+			-webkit-transform:none;
+
+		}
+		
+		#three {
+			margin-top: 5%;
+			-webkit-transform: perspective(1000px) rotatex(-70deg) rotate(80deg);
+			-webkit-transition: ease 0.5s; /* For Safari 3.1 to 6.0 */
+			transition: ease 0.5s;
+		}
+		
+		#three:hover{
+			-webkit-transform:none;
+
+		}
+			#four{
+			margin-top: 5%;
+			-webkit-transform: perspective(700px) rotatex(-60deg) rotate(-20deg);
+			-webkit-transition: ease 0.5s; /* For Safari 3.1 to 6.0 */
+			transition: ease 0.5s;
+
+		}
+		#four:hover{
+			-webkit-transform:none;
+
+		}
+			#five{
+			margin-top: 5%;
+			-webkit-transform: perspective(1000px) rotatex(-70deg) rotate(60deg);
+			-webkit-transition: ease 0.5s; /* For Safari 3.1 to 6.0 */
+			transition: ease 0.5s;
+
+		}
+		#five:hover{
+			-webkit-transform:none;
+
+		}
+
+
+    </style>
+</head>
+    
+    <body>
+        <div id="container">
+        <div id="textbox">
+        <h1>Screenshot Photography: Satellite</h1>
+        <ul>
+        <li>Time: September - December, 2017</li>
+        <li>Location: New York, Mountain View, Seattle</li>
+        <li>Medium: <a href="https://abitofgwen.github.io/screenshotphotography/">A Web Page</a></li>
+        <li>Tools Used: Google Earth, TrackingTime, Sketch, Bracket</li>
+        </ul>
+        <p>Screenshot Photography is a <i>documentary</i> that tracked my weekly geographical locations and time consumption on different computer programs during the fall semester of my junior year in college. <br>Through the entire semester, I have taken screenshots on <a href="https://www.google.com/earth/" >Google Earth</a> everytime I moved to a different location, i.e. from home to school. At the end of the semester, I then made this webpage of a series of Satellite screenshots. </p>
+        </div>
+			<div><img id="one" src="img/01.png"></div>
+			<div><img id="two" src="img/04.png"></div>
+			<div><img id="three" src="img/03.png"></div>
+			<div><img id="four" src="img/02.png"></div>
+			<div><img id="five" src="img/05.png"></div>
+        </div>
+    </body>
+</html>
