@@ -1,1 +1,1 @@
-# interactivefall2018
+# WEB Interaction Fall 2018 Class Site
