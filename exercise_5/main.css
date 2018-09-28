@@ -1,0 +1,60 @@
+body {
+	
+	margin: 0px;
+	height: 100%;
+	overflow: hidden;
+	background-color:#a08880;
+	color: white;
+}
+
+#container {
+	margin: 0;
+}
+
+#screensaver  {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: none;
+    transition: .3s ease;
+    background-color: transparent;
+    z-index: 100;
+        }
+   
+
+#about {
+	position: absolute;
+	margin-left: 10%;
+	margin-top: 10%;
+	font-family: 'Rubik Mono One', sans-serif;
+	
+}
+
+P {
+	margin: 20px;
+	color: #aba48f;
+	width: 55vw;
+	z-index: 0;
+	font-size: 55px;
+
+}
+
+#text {
+	color: #c1bbac;
+}
+#date {
+	font-size: 20px;
+	color: #aba48f;
+
+}
+#ticker {
+	position: absolute;
+	bottom: 20px;
+	margin: 20px;
+	z-index: 100;
+	font-size: 40px;
+	color: white;
+	mix-blend-mode: difference;
+}
