@@ -8,7 +8,7 @@ $(document).ready(function(){
 	
 	//dynamic text
 	var message = "Hello"
-	var name = "Stranger"
+	var name = "World"
 	var date = new Date();
 	
 	$("#text").text(message + " " + name + ",")
