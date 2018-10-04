@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Draw</title>
+<script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
+<script>
+window.onload = function() {
+  var myCanvas = document.getElementById("container");
+  var ctx = container.getContext("2d");
+    
+    // Fill Window Width and Height
+    container.width = window.innerWidth;
+  container.height = window.innerHeight;
+  
+  // Set Background Color
+    ctx.fillStyle="#a08880";
+    ctx.fillRect(0,0,container.width,container.height);
+  
+    // Mouse Event Handlers
+  if(container){
+    var isDown = false;
+    var canvasX, canvasY;
+    ctx.lineWidth = 5;
+    
+    $(container)
+    .mousedown(function(e){
+      isDown = true;
+      ctx.beginPath();
+      canvasX = e.pageX - container.offsetLeft;
+      canvasY = e.pageY - container.offsetTop;
+      ctx.moveTo(canvasX, canvasY);
+    })
+    .mousemove(function(e){
+      if(isDown !== false) {
+        canvasX = e.pageX - container.offsetLeft;
+        canvasY = e.pageY - container.offsetTop;
+        ctx.lineTo(canvasX, canvasY);
+        ctx.strokeStyle = "white";
+        ctx.stroke();
+      }
+    })
+    .mouseup(function(e){
+      isDown = false;
+      ctx.closePath();
+    });
+  }
+  
+  // Touch Events Handlers
+  draw = {
+    started: false,
+    start: function(evt) {
+
+      ctx.beginPath();
+      ctx.moveTo(
+        evt.touches[0].pageX,
+        evt.touches[0].pageY
+      );
+
+      this.started = true;
+
+    },
+    move: function(evt) {
+
+      if (this.started) {
+        ctx.lineTo(
+          evt.touches[0].pageX,
+          evt.touches[0].pageY
+        );
+
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+      }
+
+    },
+    end: function(evt) {
+      this.started = false;
+    }
+  };
+  
+  // Touch Events
+  container.addEventListener('touchstart', draw.start, false);
+  container.addEventListener('touchend', draw.end, false);
+  container.addEventListener('touchmove', draw.move, false);
+  
+  // Disable Page Move
+  document.body.addEventListener('touchmove',function(evt){
+    evt.preventDefault();
+  },false);
+};  
+</script>
+<style>
+  
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  
+}
+
+#container {
+    cursor: url('cursorsmall.png'), default;
+    position: fixed;
+}
+#tap {
+  position:fixed;
+  left:40%;
+  top:5%;
+  z-index: 999;
+}
+#back {
+	position: fixed;
+	left: 90%;
+	top: 5%;
+	z-index: 999;
+	}
+   
+</style>
+</head>
+<body>
+<div id="tap"><img src="tap.png" width="100%"></div>
+	<div id="back"><a href="index.html"><img src="back.png" width="100%"></a></div>
+
+  <canvas id="container">
+  </canvas>
+</body>
+</html>
+
