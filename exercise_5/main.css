@@ -59,6 +59,8 @@ P {
 	font-size: 30px;
 	color: white;
 	mix-blend-mode: difference;
+	font-family: 'Proxima Nova', sans-serif;
+
 }
 
 #draw {
