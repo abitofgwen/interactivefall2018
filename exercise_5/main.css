@@ -26,27 +26,29 @@ body {
 
 #about {
 	position: absolute;
-	margin-left: 10%;
-	margin-top: 10%;
-	font-family: 'Rubik Mono One', sans-serif;
+	margin-left: 34%;
+	margin-top: 17%;
+    font-family: 'Proxima Nova', sans-serif;
 	
 }
 
 P {
 	margin: 20px;
-	color: #aba48f;
-	width: 55vw;
+	color: #fff;
+	width: 30vw;
 	z-index: 0;
-	font-size: 55px;
+	font-size: 24px;
+	text-align: justify;
 
 }
 
 #text {
-	color: #c1bbac;
+	color: pink;
+	font-size: 20px;
 }
 #date {
 	font-size: 20px;
-	color: #aba48f;
+	color: pink;
 
 }
 #ticker {
@@ -54,7 +56,14 @@ P {
 	bottom: 20px;
 	margin: 20px;
 	z-index: 100;
-	font-size: 40px;
+	font-size: 30px;
 	color: white;
 	mix-blend-mode: difference;
 }
+
+#draw {
+	position: fixed;
+	left: 5%;
+	top: 92%;
+	z-index: 200;
+	}
