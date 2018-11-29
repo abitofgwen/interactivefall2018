@@ -1,0 +1,104 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+div#background-site {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index:1;
+}
+
+div#background-site iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.frame{
+	position: absolute;
+	border: 1px solid #333;
+	background: blue;
+	box-shadow: 0 1px 10px #111;
+	border-radius: 3px;
+	z-index: 10;
+	overflow: hidden;
+}
+.topbar{
+    border-radius: 3px 3px 0 0;
+	padding: 1px;
+	text-align: right;
+	cursor:url('img/placeholder.png'), auto;;
+}
+.xbtn{
+	padding: 2px 4px;
+	text-align: center;
+	border-radius: 2px;
+	color: white;
+	display: inline-block;
+	*display: inline;
+	zoom: 1.0;
+	vertical-align: top;
+	font-family: 'Days One', sans-serif;
+	font-size: 16px;
+	margin-top: -2px;
+}
+
+.xbtn:hover{
+	color: #e7e7e7;
+}
+.content{
+	height: 15vw;
+	width: 25vw;
+	padding: 5px;
+	cursor:url('img/placeholder.png'), auto;;
+
+}
+.content>div{
+	width: inherit;
+	height: inherit;
+}
+.onTop{
+	z-index: 9999;
+}
+
+#win1 {
+  left: 10vw;
+  top: 5vh;
+}
+#win2 {
+  left: 70vw;
+  top: 10vh;
+}
+#win3 {
+  left: 2vw;
+  top: 60vh;
+}
+#win4{
+  left: 20vw;
+  top: 35vh;
+}
+#win5{
+  left: 40vw;
+  top: 12vh;
+}
+#win6{
+  left: 60vw;
+  top: 45vh;
+  
+}
+#win7{
+  left: 23vw;
+  top: 68vh;
+  
+}
+#win8{
+  left: 45vw;
+  top: 60vh;
+  
+}
+#win9{
+  left: 78vw;
+  top: 70vh;
+  
+}
