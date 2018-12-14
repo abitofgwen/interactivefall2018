@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+      <div class="frame" id="win1">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"><!--high line-->
+            <div class="view" data-lat="40.7439333" data-lng="-74.0067722" data-heading="85"></div>
+          </div>
+        </div>
+
+
+      <div class="frame" id="win2">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"><!--chelsea market-->
+            <div class="view" data-lat="40.742008" data-lng="-74.0046304" data-heading="265"></div>
+          </div>
+        </div>
+
+      <div class="frame" id="win3">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"><!--Route-->
+            <div class="view" style="float:left"  data-lat="40.7415578" data-lng="-74.0007876" data-heading="118"></div>
+          </div>
+        </div>
+
+      <div class="frame" id="win4">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"><!--Parsons-->
+            <div class="view" style="float:left"  data-lat="40.735582" data-lng="-73.9935818" data-heading="190"></div>
+          </div>
+        </div>
+	        <div class="frame" id="win5">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"> <!--Joe's Coffee-->
+            <div class="view" style="float:left"  data-lat="40.7350092" data-lng="-73.993367" data-heading="31.94"></div>
+          </div>
+        </div>
+	        <div class="frame" id="win6">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"> <!--Blue Bottle-->
+            <div class="view" style="float:left"  data-lat="40.7425601" data-lng="-74.0069946" data-heading="202"></div>
+          </div>
+        </div>
+	   <div class="frame" id="win7">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"> <!--Starbucks Union Sq-->
+            <div class="view" style="float:left"  data-lat="40.7363486" data-lng="-73.9909181" data-heading="272"></div>
+          </div>
+        </div>
+	    <div class="frame" id="win8">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"> <!--Starbucks 8th Ave-->
+            <div class="view" data-lat="40.7411913" data-lng="-74.0015115" data-heading="123"></div>
+          </div>
+        </div>
+
+      <div class="frame" id="win9">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"> <!--Starbucks 9th Ave-->
+            <div class="view" data-lat="40.7416254" data-lng="-74.00476" data-heading="69"></div>
+          </div>
+        </div>
+
+	     <div class="frame" id="win10">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"> <!--Croque Monsieur-->
+            <div class="view" data-lat="40.7348822" data-lng="-73.9930548" data-heading="28"></div>
+          </div>
+        </div>
+
+	  	     <div class="frame" id="win11">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"> <!--Chalait-->
+            <div class="view" data-lat="40.7465989" data-lng="-73.9879843" data-heading="226"></div>
+          </div>
+	  </div>
+
+	   <div class="frame" id="win12">
+        <div class="topbar">
+          <div class="xbtn">x</div>
+        </div>
+        <div class="content"> <!--MatchaBar-->
+            <div class="view" data-lat="40.7402228" data-lng="-74.0014245" data-heading="207"></div>
+          </div>
+        </div>
+      <!-- hide/show button -->
+        <div class="frame" id="win13">
+           <div class="topbar">
+             <button class="button" id = "b1" type="button" onclick="HideOrShowWindow()">hide all windows</button>
+           </div>
+        </div>
+	<div id="background-site">
+		<iframe src="https://docs.google.com/document/d/1T2YLPYRgj34sByzwiVPQd7A6cA2brN4xY9CX9Gq2VEM/edit?usp=sharing"></iframe>
+	</div>
+
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtsVBVuA0-grvaHaPWujldVUpNXzI1ezc&callback=initialize"></script>
+  </body>
+</html>
